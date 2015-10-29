@@ -1,0 +1,9 @@
+SQL> SPARQL SELECT  (COUNT(*) as ?count) FROM <http://edan.si.edu/saam/id> WHERE { ?x ?y ?z.};
+
+count
+INTEGER
+_______________________________________________________________________________
+
+3398350
+
+1 Rows. -- 39 msec.

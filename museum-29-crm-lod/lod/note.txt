@@ -1,0 +1,6 @@
+Use Sublime Text Regular Expression to create pattern files from the query results:
+
+Find: 
+\ +
+Replace: 
+,

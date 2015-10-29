@@ -1,0 +1,3 @@
+SQL> SPARQL SELECT DISTINCT ?c1 ?dp1a ?op12 ?c2 ?dp2a (COUNT(*) as ?count) FROM <http://edan.si.edu/saam/id> WHERE { ?x ?dp1a ?y. ?x ?op12 ?z. ?z ?dp2a ?u. ?x rdf:type ?c1. ?z rdf:type ?c2. FILTER (?x != ?z). FILTER isLiteral(?y). FILTER isLiteral(?u).} GROUP BY ?c1 ?dp1a ?op12 ?c2 ?dp2a ORDER BY DESC(?count);
+
+245 Rows. -- 28053 msec.
